@@ -32,9 +32,9 @@ from omegaconf import OmegaConf
 
 # Ignore excessive warnings
 import logging
-
 logging.propagate = False
 logging.getLogger().setLevel(logging.ERROR)
+
 import wandb
 #wandb.init(project="DSTAGNN1")
 wandb.init(settings=wandb.Settings(start_method="fork"))
